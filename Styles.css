@@ -1,0 +1,154 @@
+
+
+
+*
+{
+  /* 
+    Defines the main font used throughout the entire site 
+  */
+  font-family: Arial, Sans-Serif;
+  margin: 0 auto;
+}
+
+body
+{
+  /* 
+    Clears white space around the body and gives it a dark gray color.
+  */
+  margin: 0;
+
+}
+
+a
+{
+  /*
+    Clears the underline on normal links, and gives them a purple text color.
+  */
+  text-decoration: none;
+  color: #4628C4;
+}
+
+a:hover
+{
+  /*
+    Underlines links when the user hovers the mouse over them.
+  */
+  text-decoration : underline;
+}
+
+
+
+#Header
+{
+  /*
+    Gives the header the same width as the PageWrapper. The height creates some room for the logo
+    that is set with the background-image.
+  */
+  background-image: url("logo1.png");
+  height: 90px;
+  background-position:left;
+  background-repeat: repeat;
+}
+
+
+#MainContent
+{
+  /*
+    Defines the main content area. The #MainContent element has a minimum height of 500 pixels, but can grow if necessary.
+    The font-size is 80% of its parent element, which in this case comes down to 80% of the font
+    the user has specified as the default font in the browser.
+  */
+  font-size: 12px;
+  width: 960px;
+  border-left: 1px solid white;
+  border-right: 2px solid white;
+  min-height: 400px;
+  padding: 10px;
+}
+
+
+#Footer
+{
+  /*
+    The footer is positioned below all other content (yet still within PageWrapper).
+    clear: both is used to clear the impact of the float properties used for #MainContent and #Sidebar.
+  */
+  
+  clear: both;
+  height: 37px;
+  background-color : #FF0000;
+  color: White;
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: bold;
+  line-height: 37px;
+}
+
+.Introduction
+{
+  font-style: italic;
+  color: #3e3e3e;
+}
+
+h1
+{
+  text-align:center;
+  font-size:20px;
+ /* margin-top:10px;*/
+ padding: 15px;
+}
+
+
+h2
+{
+  font-size:20px;
+}
+
+td
+{
+  border: 1px solid #98AFC7;
+  padding: 20px;
+  
+}
+
+div #Content input
+{
+ position: absolute;
+ left: 450px;
+}
+
+div #Content
+{
+  font-size: 14px;
+  line-height: 150%;
+}
+
+#logoBar
+{
+  background: url(logo1.png) repeat center;
+  height: 80px;
+}
+
+#login
+{
+ height: 250px;
+ width: 300px;
+ border: solid black;
+ position:absolute;
+ left: 10px;
+}
+
+
+#RightSide
+{
+  height: 250px;
+  border: solid black;
+ position:relative;
+  left: 130px;
+}
+
+p
+{
+  font-size: 16px;
+}
+

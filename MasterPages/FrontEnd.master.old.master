@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="FrontEnd.master.cs" Inherits="MasterPages_FrontEnd" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Luvly Dubly Administration Panel</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Styles.css" rel="stylesheet" type="text/css" />
+    <link href="../MasterPages/styles/bootstrap.css" rel="stylesheet" type="text/css" />
+   
+</head>
+
+<body>
+    <form id="form1" runat="server">
+      <div id="Header">
+      </div>
+
+      <div id="MenuWrapper">
+      <h1>LuvlyDubly Administration Panel</h1>
+        <asp:Menu ID="Menu1" runat="server" CssClass="MainMenu" 
+          DataSourceID="SiteMapDataSource1" Orientation="Horizontal" 
+          StaticEnableDefaultPopOutImage="False">
+          <DynamicItemTemplate>
+<%# Eval("Text") %>
+          </DynamicItemTemplate>
+        </asp:Menu>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" 
+          ShowStartingNode="False" />
+      </div >
+        
+      <div id="MainContent">
+        <asp:ContentPlaceHolder id="cpMainContent" runat="server">
+        </asp:ContentPlaceHolder>
+      </div>
+      <div id="Footer">
+        &copy; 2012 luvlydubly. All rights reserved.
+      </div>
+    </form>
+</body>
+</html>
